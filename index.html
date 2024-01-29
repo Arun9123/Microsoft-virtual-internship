@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>EduCare</title>
+    <link rel="icon" href="assets/images/EduCare.ico" type="image/x-icon">
+
+    
+    <style>
+        #loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    </style>
+
+
+
+
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+</head>
+
+<body>
+    
+    <div id="preloader">
+        <div class="preloader"></div>
+    </div>
+
+    <script>
+        var loader=document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display= "none";
+        })
+    </script>
+
+    <!--header-->
+
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark stroke">
+                <h1>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/EduCare.png" alt="EduCare logo"></a>
+                </h1>
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="courses.html">Courses</a>
+                        </li>
+                        <li class="nav-item mr-lg-1">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!--/search-right-->
+                        <li class="header-search mr-lg-2 mt-lg-0 mt-4 position-relative">
+                            <div class="search-right">
+                                <a href="#search" class="btn btn-style search-btn" title="search"><span
+                                        class="fas fa-search mr-2" aria-hidden="true"></span> Search</a>
+                              
+                            </div>
+                        </li>
+                        <!--//search-right-->
+                    </ul>
+                </div>
+
+
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container py-1">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+
+        </div>
+    </header>
+    <!--/header-->
+    <!--/Banner-Start-->
+    <section class="bannerw3l-hnyv">
+        <div class="banner-layer">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/images/Classroom video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="main-content-top">
+                <div class="container">
+                    <div class="main-content">
+                        <!-- if logo is image enable this   
+                        <a class="logo" href="index.html">
+                            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                        </a> -->
+                        <h4><p style="color: red; font-weight: bold; font-size: 30px;">Education with fun learning</p></h4>
+                        <h3><span class="inn-text">Discover</span> best <span class="inn-text">classes for</span> efficient <span class="inn-text">upskilling</span> </h3>
+                        <a href="about.html" class="btn btn-style transparant-btn mt-md-5 mt-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3apply-admission">
+            <div class="apply-admission-wrap">
+                <div class="apply-admission-inner">
+                    <h4 class="title text-center">
+                        <span>Apply for admission</span>
+                    </h4>
+                    <div class="caption text-center mb-2">
+                        Make it interesting!
+                    </div>
+                    <div class="apply-form">
+                        <form action="#" class="" method="post">
+                            <input type="text" name="text" placeholder="Your Name" required="">
+                            <input type="email" name="email" placeholder="Your Email" required="">
+                            <button class="btn btn-style btn-primary">Apply Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//Banner-End-->
+    <!-- /bottom-grids-->
+    <section class="w3l-bottom-grids-6 py-5" id="grids">
+        <div class="container py-md-5 py-2">
+            <div class="grids-area-hny row text-left pt-lg-5 mt-lg-5">
+                <div class="col-lg-4 col-md-6 grids-feature pr-lg-5">
+                    <div class="area-box">
+                        <span class="fas fa-users"></span>
+                        <h4><a href="#feature" class="title-head">Most Experienced Teachers</a></h4>
+                        <p>Discover exceptional educators offering unparalleled expertise and guidance in various subjects.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-5">
+                    <div class="area-box">
+                        <span class="fas fa-laptop-code"></span>
+                        <h4><a href="#feature" class="title-head">Large selection of courses</a>
+                        </h4>
+                        <p>Explore our vast course selection, offering diverse topics to suit every learner's interests and educational goals.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-5 pl-lg-5">
+                    <div class="area-box">
+                        <span class="fas fa-book-open"></span>
+                        <h4><a href="#feature" class="title-head">High-Quality Classes</a></h4>
+                        <p>Explore our top-tier classes ensuring high-quality education tailored to your learning preferences and goals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //bottom-grids-->
+    <!--/about-section -->
+    <section class="w3l-homeblock1" id="about">
+        <div class="midd-w3 py-5">
+            <div class="container py-lg-5 py-md-3">
+                <div class="row cwp23-grids align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="title-w3l">Find courses on any <span class="inn-text">Topic</span></h3>
+                        <h6 class="mt-md-4 mt-md-5 mt-4">Build library for your own career
+                            <br>and personal growth</h6>
+                        <a href="about.html" class="btn btn-style btn-primary mt-lg-5 mt-4">Visit Courses</a>
+                    </div>
+                    <div class="HomeAboutImages col-lg-6 mt-lg-0 mt-5 pl-lg-5">
+                        <div class="cwp23-text-cols row">
+                            <div class="column col-6">
+                                <div class="column-w3-img position-relative">
+                                    <a href="#"><img src="assets/images/1.jpg" alt=""
+                                            class="radius-image img-fluid"></a>
+                                    <div class="edu-info">
+                                        <h4 class="edu-heading-title"><a href="#">Soft skills</a></h4>
+                                    </div>
+                                </div>
+                                <div class="column-w3-img position-relative mt-4">
+                                    <a href="#"><img src="assets/images/b8.jpg" alt=""
+                                            class="radius-image img-fluid"></a>
+                                    <div class="edu-info">
+                                        <h4 class="edu-heading-title"><a href="#">Technology</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column col-6">
+                                <div class="column-w3-img position-relative">
+                                    <a href="#"><img src="assets/images/b3.jpg" alt=""
+                                            class="radius-image img-fluid"></a>
+                                    <div class="edu-info">
+                                        <h4 class="edu-heading-title"><a href="#">Entrepreneurship</a></h4>
+                                    </div>
+                                </div>
+                                <div class="column-w3-img position-relative mt-4">
+                                    <a href="#"><img src="assets/images/2.jpg" alt=""
+                                            class="radius-image img-fluid"></a>
+                                    <div class="edu-info">
+                                        <h4 class="edu-heading-title"><a href="#">Photography</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//about-section -->
+    <!--/home-stats-->
+    <section class="w3l-stats-main" id="stats">
+        <div class="container">
+            <div class="row stats-con py-lg-0 py-5">
+                <div class="col-lg-6 stats-content-right mb-lg-0 mb-lg-5 mb-2">
+                    <a href="#service" class="d-block zoom"><img src="assets/images/ab1.jpg" alt=""
+                            class="img-fluid" /></a>
+                </div>
+                <div class="col-lg-6 stats-content-left pl-lg-5">
+
+                    <div class="stats_info counter_grid1 text-left mt-lg-5 mt-4">
+                        <div class="icon stat-icon">
+                            <p class="counter">200+</p>
+                        </div>
+                        <div class="stat-icon-des">
+
+                            <h4>
+                                Most Involved Teachers</h4>
+                            <p class="para-stat">Exceptional educators, diverse subjects: best teaching expertise.</p>
+                        </div>
+                    </div>
+                    <div class="stats_info counter_grid text-left mt-lg-5 mt-4">
+                        <div class="icon stat-icon">
+                            <p class="counter">3500+</p>
+                        </div>
+                        <div class="stat-icon-des">
+
+                            <h4>Vast selection of courses</h4>
+                            <p class="para-stat">Vast course selection: diverse topics, tailored learning.</p>
+                        </div>
+                    </div>
+                    <div class="stats_info counter_grid text-left mt-lg-5 mt-4">
+                        <div class="icon stat-icon">
+                            <p class="counter">100%</p>
+                        </div>
+                        <div class="stat-icon-des">
+
+                            <h4>High-Quality Courses</h4>
+                            <p class="para-stat">Top-tier classes, diverse categories: quality education tailored.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//home-stats-->
+    <!--/popular-Courses-->
+    <section class="w3l-courses" id="courses">
+        <div class="blog py-5">
+            <div class="container py-md-5 py-2">
+                <h5 class="title-subw3hny text-center">Featured Courses</h5>
+                <h3 class="title-w3l text-center">Popular <span class="inn-text">Courses</span></h3>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/b1.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="post-pos">
+                                    <a href="#popular" class="receipe blue">Beginner</a>
+                                    <a href="#popular" class="receipe yellow ml-2">Free</a>
+                                </div>
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <p>
+                                        <s>₹2499</s>
+                                    </p>
+                                    <ul class="rating-star">
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star-o"></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#course-single" class="course-desc">Essential Guide to Entrepreneurship
+                                </a>
+                                <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fas fa-users"></span>
+                                        <span class="meta-value"> 968 Students enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/b2.jpg"
+                                        alt="Card image cap">
+                                </a>
+
+
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <p>
+                                        ₹4999
+                                    </p>
+                                    <ul class="rating-star">
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star-o"></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#course-single" class="course-desc">Web Development: Zero to Hero</a>
+                                <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fas fa-users"></span>
+                                        <span class="meta-value"> 1274 Students enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/b3.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="post-pos">
+                                    <a href="#reciepe" class="receipe blue">Beginner</a>
+                                    <a href="#popular" class="receipe yellow ml-2">New</a>
+                                </div>
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <p>
+                                        ₹3999
+                                    </p>
+                                    <ul class="rating-star">
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star-o"></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#course-single" class="course-desc">Master DBMS in 15 hours</a>
+                                <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fas fa-users"></span>
+                                        <span class="meta-value"> 573 Students enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 item mt-5">
+                        <div class="card">
+                            <div class="card-header p-0 position-relative">
+                                <a href="#course-single" class="zoom d-block">
+                                    <img class="card-img-bottom d-block" src="assets/images/b4.jpg"
+                                        alt="Card image cap">
+                                </a>
+
+
+                            </div>
+                            <div class="card-body course-details">
+                                <div class="price-review d-flex justify-content-between mb-1align-items-center">
+                                    <p>₹1499</p>
+                                    <ul class="rating-star">
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star"></span></li>
+                                        <li><span class="fas fa-star-o"></span></li>
+                                    </ul>
+                                </div>
+                                <a href="#course-single" class="course-desc">Business Analysis: Working with Cases</a>
+                                <div class="course-meta mt-4">
+                                    <div class="meta-item course-lesson">
+                                        <span class="fas fa-users"></span>
+                                        <span class="meta-value"> 381 Students enrolled</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mt-5 mx-auto text-more text-center pt-lg-4">
+                        <a href="courses.html" class="btn btn-style btn-primary">View All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//popular-Courses-->
+    <!--/testimonials-->
+    <section class="w3l-testimonials" id="testimonials">
+        <!-- /grids -->
+        <div class="cusrtomer-layout py-5">
+            <div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+                <h5 class="title-subw3hny text-center mb-1">Reviews</h5>
+                <h3 class="title-w3l two text-center mb-sm-5 mb-4">Satisfied Clients & <span
+                        class="inn-text">Feedbacks</span></h3>
+                <!-- /grids -->
+                <div class="testimonial-width">
+                    <div class="owl-two row">
+                         <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <i class="fas fa-quote-right"></i>
+                                    <blockquote>
+                                        <q>
+                                            Incredible experience! The e-learning site offers comprehensive courses, interactive lessons, and accessible resources. Truly a game-changer in education!
+                                        </q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Priya Ghosh</h3>
+                                            <p class="indentity">Kolkata</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <i class="fas fa-quote-right"></i>
+                                    <blockquote>
+                                        <q>
+                                            Fantastic e-learning platform! Engaging courses, intuitive interface, and helpful support. Highly recommend for anyone pursuing lifelong learning goals.
+                                        </q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Rohan Patel</h3>
+                                            <p class="indentity">Delhi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="col-lg-4 col-md-6 item mt-md-5 mt-4">
+                            <div class="testimonial-content">
+                                <div class="testimonial">
+                                    <i class="fas fa-quote-right"></i>
+                                    <blockquote>
+                                        <q>Absolutely thrilled with this e-learning website! The courses are top-notch, instructors are knowledgeable, and the platform is user-friendly. Really impressive!</q>
+                                    </blockquote>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>Nisha Singh</h3>
+                                            <p class="indentity">Punjab</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /grids -->
+        </div>
+        <!-- //grids -->
+    </section>
+    <!-- //testimonials -->
+    <!--/subscribe-->
+    <section class="w3l-project" id="subscribe">
+        <div class="container-fluid mx-lg-0">
+            <div class="row">
+                <div class="col-lg-6 bottom-info">
+                    <div class="project-header-section text-left">
+                        <h5 class="title-subw3hny text-left mb-1">Join With Us</h5>
+                        <br>
+                        <h3 class="title-w3l">Join us for Free to get personalized email updates!</h3>
+                        <p class="mt-3 pr-lg-5">Subscribe and be the first to be notified of interesting offers and updates!</p>
+
+                        <form action="#" class="subscribe mt-5" method="post">
+                            <input type="email" name="email" placeholder="Your Email Address" required="">
+                            <br>
+                            <button class="btn btn-style btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 subcribe-img">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//subscribe-->
+    <!--/footer-->
+    <footer class="w3l-footer-22 position-relative">
+        <div class="footer-sub py-5">
+            <div class="container py-md-5">
+                <div class="row sub-columns">
+                    <div class="col-lg-4 col-md-6 sub-one-left ab-right-cont pr-lg-5 mb-md-0  mb-4">
+                        <h6>About </h6>
+                        <p>Improving lives through Learning.
+                            We are always inspired by the world and people around us.</p>
+                        <div class="columns-2">
+                            <ul class="social">
+                                <li><a href="#facebook"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#linkedin"><span class="fab fa-linkedin-in" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#twitter"><span class="fab fa-twitter" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#google"><span class="fab fa-google-plus-g" aria-hidden="true"></span></a>
+                                </li>
+                                <li><a href="#pinterest"><span class="fab fa-pinterest-p" aria-hidden="true"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 sub-two-right pl-lg-5">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="index.html"><span class="fas fa-chevron-right mr-2"></span>Home</a>
+                            </li>
+                            <li><a href="about.html"><span class="fas fa-chevron-right mr-2"></span>About</a>
+                            </li>
+                            <li><a href="courses.html"><span class="fas fa-chevron-right mr-2"></span>Courses</a></li>
+                            <li><a href="contact.html"><span class="fas fa-chevron-right mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 sub-two-right pl-lg-5 mt-md-0 mt-4">
+                        <h6>Help & Support</h6>
+                        <ul>
+                            <li><a href="#live"><span class="fas fa-chevron-right mr-2"></span>Live
+                                    Chart</a></li>
+                            <li><a href="#faq"><span class="fas fa-chevron-right mr-2"></span>FAQ</a>
+                            </li>
+                            <li><a href="#support"><span class="fas fa-chevron-right mr-2"></span>Support</a>
+                            </li>
+                            <li><a href="#terms"><span class="fas fa-chevron-right mr-2"></span>Terms
+                                    of Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 sub-two-right mt-md-0 mt-4">
+                        <h6>Research</h6>
+                        <ul>
+                            <li><a href="#"><span class="fas fa-chevron-right mr-2"></span> Academic Divisions</a>
+                            </li>
+                            <li><a href="#"><span class="fas fa-chevron-right mr-2"></span> Student Research</a>
+                            </li>
+                            <li><a href="#"><span class="fas fa-chevron-right mr-2"></span> Centers & Institutes</a>
+                            </li>
+                            <li><a href="#"><span class="fas fa-chevron-right mr-2"></span> Research Facilities</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright-footer text-center">
+            <div class="container">
+                <div class="columns">
+                    <p>
+                        © 2024 EduCare. All rights reserved. Designed by Arunabha Dutta
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //copyright -->
+    </footer>
+    </div>
+    <!-- //footer -->
+    <div id="chatbot-icon">
+        <img src="assets/images/chatbot.webp" alt="Chatbot Icon">
+      </div>
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+
+    
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    <!-- //move top -->
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+
+    <!--//MENU-JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    
+
+</body>
+
+</html>
