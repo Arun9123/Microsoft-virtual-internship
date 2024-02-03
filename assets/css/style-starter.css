@@ -20450,12 +20450,6 @@ p.inner-page-para {
   width: 100%;
   height: 450px;
   display: block;
-  -webkit-filter: var(--iframe-filter);
-  -moz-filter: var(--iframe-filter);
-  -ms-filter: var(--iframe-filter);
-  -o-filter: var(--iframe-filter);
-  filter: var(--iframe-filter);
-  background:var(--bg-lightgrey);
   padding:10px;
   
 }
