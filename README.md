@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Microsoft-virtual-internship
+**Microsoft-virtual-internship**
+
 This is a project as a part of virtual internship at Microsoft.
-=======
-This project is a part of the virtual internship at Microsoft.
->>>>>>> master
+The website is accessible at https://arun9123.github.io/Microsoft-virtual-internship/
