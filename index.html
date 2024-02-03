@@ -6,42 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>EduCare</title>
-    <link rel="icon" href="assets/images/EduCare.ico" type="image/x-icon">
-
-    
-    <style>
-        #loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-    </style>
-
-
-
-
-
+    <link rel="icon" href="assets/images/EduCare_icon.ico" type="image/x-icon">
     <!-- google fonts -->
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Template CSS -->
@@ -51,17 +16,6 @@
 
 <body>
     
-    <div id="preloader">
-        <div class="preloader"></div>
-    </div>
-
-    <script>
-        var loader=document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display= "none";
-        })
-    </script>
-
     <!--header-->
 
     <header id="site-header" class="fixed-top">
@@ -135,6 +89,10 @@
             <div class="main-content-top">
                 <div class="container">
                     <div class="main-content">
+                        <!-- if logo is image enable this   
+                        <a class="logo" href="index.html">
+                            <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                        </a> -->
                         <h4><p style="color: red; font-weight: bold; font-size: 30px;">Education with fun learning</p></h4>
                         <h3><span class="inn-text">Discover</span> best <span class="inn-text">classes for</span> efficient <span class="inn-text">upskilling</span> </h3>
                         <a href="about.html" class="btn btn-style transparant-btn mt-md-5 mt-4">Read More</a>
