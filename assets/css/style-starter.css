@@ -20667,7 +20667,7 @@ p.inner-page-para {
 #chatbot-icon img {
   width: 75px; /* Adjust icon size as needed */
   height: 75px; /* Adjust icon size as needed */
-  border-radius: 37.5px;
+  border-radius: 7.5px;
   cursor: pointer;
   transition: transform 1s ease;
 }
