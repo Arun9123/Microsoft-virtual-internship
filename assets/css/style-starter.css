@@ -20672,8 +20672,12 @@ p.inner-page-para {
   transition: transform 1s ease;
 }
 
+#chatbot-icon a{
+  width: 50%;
+}
+
 #chatbot-icon:hover{
-  transform: scale(1.3); /* Increase scale on hover */
+  transform: scale(1.3);
 }
 
 /*--//contact--*/
