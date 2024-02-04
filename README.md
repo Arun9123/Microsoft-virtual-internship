@@ -1,7 +1,7 @@
 **EduCare**
 
 Welcome to EduCare! This is a project as a task of the virtual internship at Microsoft.
-The website is accessible at salmon-island-045ae5d00.4.azurestaticapps.net (hosted on Azure platform). Various Azure services including Azure Bot, Azure Search service, Azure Language, Azure Static Web App, Azure Resource group, Azure Managed Identity and so forth have been implemented in this project.
+The website is accessible at https://salmon-island-045ae5d00.4.azurestaticapps.net/ (hosted on Azure platform). Various Azure services including Azure Bot, Azure Search service, Azure Language, Azure Static Web App, Azure Resource group, Azure Managed Identity and so forth have been implemented in this project.
 
 **Introduction**
 
